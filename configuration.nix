@@ -73,11 +73,6 @@
     };
     openssh.enable = true;
   };
-
-
-  environment.systemPackages = with pkgs; [
-    tuigreet
-  ];
   
   hardware = {
     graphics = {
@@ -94,16 +89,31 @@
       "steam"
       "steam-unwrapped"
     ];
+    
+  xdg.portal = {
+    enable = true;
+    xdgOpenUsePortal = true;
+    config.common.default = "*";
+    extraPortals = [ pkgs.xdg-desktop-portal-gtk pkgs.xdg-desktop-portal-gnome ];
+  };
 
+  environment.systemPackages = with pkgs; [
+    tuigreet
+  ];
+  
   users.users.mika = {
     isNormalUser = true;
     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
     packages = with pkgs; [
       vim
       helix
+      
       niri
       xwayland-satellite
       noctalia-shell
+      xdg-desktop-portal-gtk
+      xdg-desktop-portal-gnome
+      
       kitty
       fish
       tree
@@ -135,6 +145,7 @@
       gtop
       htop
       gnome-characters
+      shotcut
     ];  
   };
   

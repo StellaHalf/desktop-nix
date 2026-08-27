@@ -154,7 +154,7 @@
       gnome-calculator
       gnome-system-monitor
       gnome-disk-utility
-      okular
+      evince
       signal-desktop
     ];  
   };

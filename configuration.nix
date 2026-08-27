@@ -72,6 +72,7 @@
       pulse.enable = true;
     };
     openssh.enable = true;
+    udisks2.enable = true;
   };
   
   hardware = {
@@ -149,6 +150,12 @@
       gnome-characters
       shotcut
       totem
+      loupe
+      gnome-calculator
+      gnome-system-monitor
+      gnome-disk-utility
+      okular
+      signal-desktop
     ];  
   };
   

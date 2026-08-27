@@ -92,9 +92,11 @@
     
   xdg.portal = {
     enable = true;
-    xdgOpenUsePortal = true;
-    config.common.default = "*";
     extraPortals = [ pkgs.xdg-desktop-portal-gtk pkgs.xdg-desktop-portal-gnome ];
+    config.common = {
+      "org.freedesktop.impl.portal.Screencast" = [ "gnome" ];
+      default = [ "gtk" ];
+    };
   };
 
   environment.systemPackages = with pkgs; [
@@ -111,8 +113,8 @@
       niri
       xwayland-satellite
       noctalia-shell
-      xdg-desktop-portal-gtk
       xdg-desktop-portal-gnome
+      xdg-desktop-portal-gtk
       
       kitty
       fish
@@ -146,6 +148,7 @@
       htop
       gnome-characters
       shotcut
+      totem
     ];  
   };
   

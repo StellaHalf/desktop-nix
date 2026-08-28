@@ -150,7 +150,7 @@
       htop
       gnome-characters
       shotcut
-      showtime
+      totem
       loupe
       gnome-calculator
       gnome-system-monitor

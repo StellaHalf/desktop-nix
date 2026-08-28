@@ -138,6 +138,7 @@
       zed
       hyfetch
       steam
+      heroic
       amdgpu_top
       lmms
       openutau
@@ -156,6 +157,7 @@
       gnome-disk-utility
       evince
       signal-desktop
+      rhythmbox
     ];  
   };
   

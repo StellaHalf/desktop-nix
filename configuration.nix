@@ -130,6 +130,7 @@
       rustup
       gcc
       godot
+      wine
       
       firefox
       thunderbird
@@ -150,7 +151,7 @@
       htop
       gnome-characters
       shotcut
-      totem
+      celluloid
       loupe
       gnome-calculator
       gnome-system-monitor
@@ -158,6 +159,7 @@
       evince
       signal-desktop
       rhythmbox
+      gimp
     ];  
   };
   

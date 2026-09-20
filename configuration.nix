@@ -139,7 +139,7 @@
       tinymist
 
       fd
-      lsusb
+      usbutils
       firefox
       thunderbird
       nautilus

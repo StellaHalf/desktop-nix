@@ -66,7 +66,10 @@
         user = "greeter";
       };
     };
-    printing.enable = true;
+    printing = {
+      enable = true;
+      drivers = [ pkgs.hplipWithPlugin ];
+    };
     pipewire = {
       enable = true;
       pulse.enable = true;
@@ -89,6 +92,7 @@
       "discord"
       "steam"
       "steam-unwrapped"
+      "hplip"
     ];
     
   xdg.portal = {
@@ -130,8 +134,12 @@
       rustup
       gcc
       godot
-      wine
-      
+      wineWow64Packages.waylandFull
+      typst
+      tinymist
+
+      fd
+      lsusb
       firefox
       thunderbird
       nautilus
@@ -160,6 +168,7 @@
       signal-desktop
       rhythmbox
       gimp
+      android-file-transfer
     ];  
   };
   

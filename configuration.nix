@@ -40,8 +40,8 @@
     enable = true;
     wantedBy = ["default.target"];
     description = "disable faulty CPU cores";
-    after = ["systemd-ask-password-wall"];
-    requires =  ["systemd-ask-password-wall"];
+    after = ["systemd-ask-password-wall.service"];
+    requires =  ["systemd-ask-password-wall.service"];
     serviceConfig = {
       Type = "oneshot";
       ExecStart = "/etc/cpuconfig";

@@ -107,7 +107,11 @@
   environment.systemPackages = with pkgs; [
     tuigreet
   ];
-  
+
+  fonts.packages = with pkgs; [
+    comic-mono
+  ];
+
   users.users.mika = {
     isNormalUser = true;
     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
